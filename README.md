@@ -8,7 +8,7 @@
 
 注意！[日本亚马逊](https://www.amazon.co.jp/)最近作妖了，居然限制【每天每IP】读取网站书籍数据的次数，超过次数不给你数据！错误如下：
 
-CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using statistical profiling to block access to its website. As such this metadata plugin is unlikely to ever work reliably. 
+> CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using statistical profiling to block access to its website. As such this metadata plugin is unlikely to ever work reliably. 
 
 所以此插件和calibre自带的元数据插件都多了一个选项：数据来源。不过我试过以后发现除了amazon之外的几个数据源（好像都是网页缓存）并不好用.所以,悠着点用吧，别把人家网站服务器累死了:)
 
@@ -35,12 +35,13 @@ Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)�
 
 2. 如何作这么一个插件?  
 完全不懂python啊！！！拼了！从github上下载calibre的源代码,最新的是calibre(2.64.0),拷贝源代码中的 calibre calibre-master\src\calibre\ebooks\metadata\sources\amazon.py 重命名为__init__.py 抓取下列xpath:
-
+```python
 root.xpath('//div[@id="priceBlock"]/table/tbody/tr//b[@class="priceLarge"]')  
 root.xpath('//span[@class="a-color-secondary"]/span')
 
 root.xpath('//tbody[@id="paperback_meta_binding_winner"]/tr//td[@class=" price "]')  
-root.xpath('//span[@class="a-color-base"]/span[@class="a-color-price"]')  
+root.xpath('//span[@class="a-color-base"]/span[@class="a-color-price"]') 
+```
 居然成功了!!!!  
 问题又来了,calibre自带的栏目中并没有price,我不知道如何把抓取的信息存在用户自定义的栏目里,于是曲线救国,统一存到到了书号(identifiers)里  
 于是又加上一个空的txt文件,命名为plugin-import-name-AMAZON_PRICE.txt 和上述的  
