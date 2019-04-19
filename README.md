@@ -10,9 +10,9 @@
 
 CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using statistical profiling to block access to its website. As such this metadata plugin is unlikely to ever work reliably. 
 
-所以此插件和calibre自带的元数据插件都多了一个选项：数据来源。不过我试过以后发现除了amazon之外的几个数据源（好像都是网页缓存）并不好用~所以~悠着点用吧，别把人家网站服务器累死了~
+所以此插件和calibre自带的元数据插件都多了一个选项：数据来源。不过我试过以后发现除了amazon之外的几个数据源（好像都是网页缓存）并不好用.所以,悠着点用吧，别把人家网站服务器累死了:)
 
-![](https://pic2.zhimg.com/80/v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
+![](/img/v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
 
 **2016.12.09更新**   
 Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)的支持!!!本插件正式退休,想抓价格的可以继续使用,仅仅想抓取中国亚马逊商店信息的可以直接使用官方版本。
@@ -20,7 +20,7 @@ Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)�
 以下是原文:  
 ---------------------------------------------------------------------------------------------  
 我作了一个可以抓取亚马逊书籍**价格**的插件,可以从包括亚马逊中国在内的几个主要市场抓取书籍元数据.  
-我作了一个日本亚马逊在售轻小说简介的网站acgnd.com,可以参考利用这个插件抓取亚马逊图书信息的最终效果: [萌新小说-最新日本轻小说--日本亚马逊Kindle商店样书试读](http://www.acgnd.com/) 目前已经抓取了超过2万本书的信息了~
+我作了一个日本亚马逊在售轻小说简介的网站 **acgnd.com**,可以参考利用这个插件抓取亚马逊图书信息的最终效果: [萌新小说-最新日本轻小说--日本亚马逊Kindle商店样书试读](http://www.acgnd.com/) 目前已经抓取了超过2万本书的信息了~
 
 因为主程序__init__.py是直接拷贝了最新的calibre(2.74.0)源代码中的 calibre calibre-master\src\calibre\ebooks\metadata\sources\amazon.py 又加了几个函数而成,所以它原来有什么功能现在照样还有什么功能,原来不能下载亚马逊中国的元数据现在可以了。
 
@@ -66,7 +66,7 @@ __init__.py一起打包成为一个zip文件
 
 选择要下载的元数据字段,选择要使用的Amazon网站为"china",确定.
 
-我个人建议尽量**不要下载评分和出版日期**,因为评分要么没有,要么总是5星,而中国区和日本区的出版日期抓取出来总是比正确的日期晚一天~~
+我个人建议尽量**不要下载评分和出版日期**,因为评分要么没有,要么总是5星,而中国区和日本区的出版日期抓取出来总是比正确的日期晚一天.
 
 ![](https://pic1.zhimg.com/80/432070c4c82afdbecdaa63081dddc82f_hd.jpg)
 
