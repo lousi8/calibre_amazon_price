@@ -12,7 +12,7 @@ CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using st
 
 所以此插件和calibre自带的元数据插件都多了一个选项：数据来源。不过我试过以后发现除了amazon之外的几个数据源（好像都是网页缓存）并不好用.所以,悠着点用吧，别把人家网站服务器累死了:)
 
-![](//v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
+![](/img/v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
 
 **2016.12.09更新**   
 Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)的支持!!!本插件正式退休,想抓价格的可以继续使用,仅仅想抓取中国亚马逊商店信息的可以直接使用官方版本。
