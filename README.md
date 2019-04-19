@@ -2,7 +2,7 @@
 
 **2017.12.15重大更新**
 
-很久不关注amazon了，取了最新的一期(2017.12.15发布)calibre 3.14.0中的源文件重新更新了此插件，又可以抓取价格了，tag读不出。源文件写的是适用最低版本2.82 各位看着办~
+很久不关注amazon了，取了最新的一期(2017.12.15发布)calibre 3.14.0中的源文件重新更新了此插件，又可以抓取价格了，tag读不出。源文件写的是适用最低版本2.82 各位看着办吧。
 
 下载地址 [度盘](https://pan.baidu.com/s/11-BuuaNAAxp9vrgbEOVFUw)
 
@@ -12,7 +12,7 @@ CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using st
 
 所以此插件和calibre自带的元数据插件都多了一个选项：数据来源。不过我试过以后发现除了amazon之外的几个数据源（好像都是网页缓存）并不好用.所以,悠着点用吧，别把人家网站服务器累死了:)
 
-![](https://pic2.zhimg.com/80/v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
+![](//v2-c85f229b95d9fc2dc8ccecf3bf88bf9c_hd.jpg)
 
 **2016.12.09更新**   
 Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)的支持!!!本插件正式退休,想抓价格的可以继续使用,仅仅想抓取中国亚马逊商店信息的可以直接使用官方版本。
