@@ -1,4 +1,4 @@
-#calibre的亚马逊中国元数据插件
+# calibre的亚马逊中国元数据插件
 
 **2017.12.15重大更新**
 
@@ -24,7 +24,7 @@ Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)�
 
 因为主程序__init__.py是直接拷贝了最新的calibre(2.74.0)源代码中的 calibre calibre-master\src\calibre\ebooks\metadata\sources\amazon.py 又加了几个函数而成,所以它原来有什么功能现在照样还有什么功能,原来不能下载亚马逊中国的元数据现在可以了。
 
-1>为什么要作这么一个插件?  
+1. 为什么要作这么一个插件?  
 因为我想用calibre管理我的电子书,抓取亚马逊中国的元数据,同时**抓取价格**.而一本书一般有两种以上的价格, 便宜的那个当然是kindle电子书价格,贵点的是平装书价格,可能还有精装书价格等.
 
 ![](https://pic1.zhimg.com/80/b525183b2689572c42c5e89e401d8257_hd.jpg)
@@ -33,7 +33,7 @@ Calibre已经发布最新的2.74版,已内置对[amazon.cn](https://amazon.cn)�
 
 ![](https://pic4.zhimg.com/80/14273f1d9dfa2cbda337364aed2f1189_hd.jpg)
 
-2>如何作这么一个插件?  
+2. 如何作这么一个插件?  
 完全不懂python啊！！！拼了！从github上下载calibre的源代码,最新的是calibre(2.64.0),拷贝源代码中的 calibre calibre-master\src\calibre\ebooks\metadata\sources\amazon.py 重命名为__init__.py 抓取下列xpath:
 
 root.xpath('//div[@id="priceBlock"]/table/tbody/tr//b[@class="priceLarge"]')  
@@ -46,7 +46,7 @@ root.xpath('//span[@class="a-color-base"]/span[@class="a-color-price"]')
 于是又加上一个空的txt文件,命名为plugin-import-name-AMAZON_PRICE.txt 和上述的  
 __init__.py一起打包成为一个zip文件
 
-3>如何安装?
+3. 如何安装?
 
 打开calibre,点击 首选项->插件->从文件安装插件,选择刚才那个zip文件,点两次确定.
 
@@ -62,7 +62,7 @@ __init__.py一起打包成为一个zip文件
 
 安装好了就这样, 继续点击"自定义插件"
 
-![](https://pic4.zhimg.com/80/54d2845f3b265c2d8365dfffafbf8a9c_hd.jpg)
+![自定义插件](https://pic4.zhimg.com/80/54d2845f3b265c2d8365dfffafbf8a9c_hd.jpg)
 
 选择要下载的元数据字段,选择要使用的Amazon网站为"china",确定.
 
@@ -76,7 +76,7 @@ __init__.py一起打包成为一个zip文件
 
 ![](https://pic1.zhimg.com/80/a5a982e520c2f95e2a1d146580a3da7a_hd.jpg)
 
-4>工作
+4. 工作
 
 安装好了就开始下载了!
 
@@ -88,7 +88,7 @@ __init__.py一起打包成为一个zip文件
 
 过一会儿软件又下角会浮出一个对话框,可以选择"是"或者"检查刚下载的元数据"
 
-![](https://pic4.zhimg.com/80/5abcccc783ac6679cf68976cd4ab3aec_hd.jpg)
+![下载元数据](https://pic4.zhimg.com/80/5abcccc783ac6679cf68976cd4ab3aec_hd.jpg)
 
 看看,价格,作者,标签,等等都有啦~
 
@@ -104,7 +104,7 @@ __init__.py一起打包成为一个zip文件
 
 好了,大功告成!最后就是这个样子:
 
-![](https://pic1.zhimg.com/80/d0a5d63e964426b737648e1188515f54_hd.jpg)
+![成功](https://pic1.zhimg.com/80/d0a5d63e964426b737648e1188515f54_hd.jpg)
 
 另外这个插件还可以下载丛书(series)和序号(series_index),因为这两项信息只有日本亚马逊的书才有,所以不多说了.
 
