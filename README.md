@@ -4,8 +4,6 @@
 
 很久不关注amazon了，取了最新的一期(2017.12.15发布)calibre 3.14.0中的源文件重新更新了此插件，又可以抓取价格了，tag读不出。源文件写的是适用最低版本2.82 各位看着办吧。
 
-下载地址 [度盘](https://pan.baidu.com/s/11-BuuaNAAxp9vrgbEOVFUw)
-
 注意！[日本亚马逊](https://www.amazon.co.jp/)最近作妖了，居然限制【每天每IP】读取网站书籍数据的次数，超过次数不给你数据！错误如下：
 
 > CaptchaError: Amazon returned a CAPTCHA page. Recently Amazon has begun using statistical profiling to block access to its website. As such this metadata plugin is unlikely to ever work reliably. 
@@ -48,6 +46,8 @@ root.xpath('//span[@class="a-color-base"]/span[@class="a-color-price"]')
 __init__.py一起打包成为一个zip文件
 
 3. 如何安装?
+
+下载地址 [度盘](https://pan.baidu.com/s/11-BuuaNAAxp9vrgbEOVFUw)
 
 打开calibre,点击 首选项->插件->从文件安装插件,选择刚才那个zip文件,点两次确定.
 
